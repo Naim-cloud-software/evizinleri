@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Verlofkalender 2026–2027 · İzin Çizelgesi</title>
+<style>
+:root{--bg:#f2f6fa;--card:#fff;--tx:#12263a;--mu:#6b7f93;--ln:#e1e8ef;--ac:#2b6cb0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1722;--card:#15232f;--tx:#e8f0f7;--mu:#8ea3b7;--ln:#243645;--ac:#63b3ed}}
+:root[data-theme=dark]{--bg:#0d1722;--card:#15232f;--tx:#e8f0f7;--mu:#8ea3b7;--ln:#243645;--ac:#63b3ed}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;transition:background .3s}
+.w{max-width:760px;margin:0 auto;padding:16px}
+header{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+h1{font-size:1.15rem;margin:0}h1 small{display:block;color:var(--mu);font-weight:500;font-size:.8rem}
+.bt{border:1px solid var(--ln);background:var(--card);color:var(--tx);border-radius:999px;padding:7px 14px;font:inherit;font-size:.85rem;cursor:pointer;transition:transform .15s,box-shadow .2s}
+.bt:hover{transform:translateY(-1px);box-shadow:0 4px 12px #0002}.bt:active{transform:scale(.96)}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:20px;padding:18px;margin-bottom:14px;animation:up .5s both}
+@keyframes up{from{opacity:0;transform:translateY(14px)}}
+.hero{color:#fff;border:0;background:linear-gradient(135deg,var(--hc,#2b6cb0),#102a43);position:relative;overflow:hidden;transition:background .5s}
+.hero:after{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:#fff2;animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translate(-14px,12px) scale(1.15)}}
+.hero p{margin:0;opacity:.85;font-size:.85rem}.hero h2{margin:2px 0 10px;font-size:1.5rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mini{background:#fff2;border-radius:14px;padding:10px 12px;font-size:.85rem}.mini b{display:block;font-size:1.3rem}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{display:flex;align-items:center;gap:7px;border:1px solid var(--ln);background:var(--card);color:var(--tx);border-radius:999px;padding:6px 11px;font-size:.78rem;cursor:pointer;transition:.2s}
+.chip i{width:12px;height:12px;border-radius:50%;background:var(--c)}.chip.off{opacity:.35}
+.nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.nav h3{margin:0;font-size:1.2rem;text-align:center;flex:1}
+.nav .bt{width:40px;height:40px;padding:0;font-size:1.1rem}
+.g{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.g.s-l{animation:sl .35s}.g.s-r{animation:sr .35s}
+@keyframes sl{from{opacity:0;transform:translateX(30px)}}@keyframes sr{from{opacity:0;transform:translateX(-30px)}}
+.dh{font-size:.7rem;color:var(--mu);text-align:center;padding-bottom:2px}
+.d{aspect-ratio:1;border-radius:12px;border:0;font:inherit;font-weight:600;font-size:.95rem;color:var(--tx);background:var(--c,transparent);cursor:pointer;opacity:0;animation:pop .35s forwards;animation-delay:calc(var(--i)*12ms);transition:transform .15s,filter .2s,opacity .3s}
+.d.n{background:transparent;border:1px solid var(--ln)}
+.d.c{color:#fff}.d.H{color:#0b3a5a}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1}}
+.d:hover{transform:scale(1.1);z-index:2}.d.dim{filter:grayscale(1);opacity:.25!important}
+.d.t{outline:3px solid var(--tx);outline-offset:2px}
+.d.sel{transform:scale(1.12);box-shadow:0 6px 16px #0004}
+.yr{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.ym{border:1px solid var(--ln);border-radius:14px;padding:8px;cursor:pointer;transition:.2s;background:var(--card)}.ym:hover{transform:translateY(-3px);box-shadow:0 8px 18px #0003}
+.ym b{font-size:.8rem;display:block;margin-bottom:4px}.ym .g{gap:2px}.ym .d{border-radius:3px;font-size:0;animation:none;opacity:1;cursor:inherit}.ym .d:hover{transform:none}
+.det{display:flex;gap:12px;align-items:center}.det .dot{width:44px;height:44px;border-radius:14px;flex:none;background:var(--c);border:1px solid var(--ln)}
+.det p{margin:0;color:var(--mu);font-size:.85rem}.det b{font-size:1rem}
+.hide{display:none}
+footer{text-align:center;color:var(--mu);font-size:.75rem;padding:8px 0 20px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.d{opacity:1}}
+</style></head><body><div class="w">
+<header><h1 id="ti"></h1><div style="display:flex;gap:6px"><button class="bt" id="lg">TR</button><button class="bt" id="th">◐</button></div></header>
+<section class="card hero" id="hero"></section>
+<section class="card"><div class="chips" id="chips"></div></section>
+<section class="card" id="cal">
+<div class="nav"><button class="bt" id="pv">‹</button><h3 id="mt"></h3><button class="bt" id="nx">›</button></div>
+<div id="mv"></div><div id="yv" class="yr hide"></div>
+<div style="text-align:center;margin-top:12px"><button class="bt" id="vw"></button></div></section>
+<section class="card det" id="det"></section>
+<footer id="ft"></footer></div>
+<script>
+const C={H:['#7dd3fc','Thuisverlof','Ev İzinleri'],Y:['#1d6fa5','Zomerperiode','Yaz Dönemi'],T:['#f59e0b','Lesprogramma tijdens vakantie','Tatillerde Ders Programı'],M:['#22c55e','Gezegende dagen en nachten','Mübarek Günler ve Geceler'],A:['#a855f7','Activiteitenprogramma','Aktivite Programı'],S:['#ef4444','Seizoensstart / -einde (verzamelen & vertrekken)','Sezon Başı Toplanış / Sezon Sonu Dağılış'],N:['transparent','Regulier lesprogramma','Normal ders programı']};
+const X={nl:{ti:'Verlofkalender 2026–2027',su:'Yatılı · Zuid-Nederland',td:'Vandaag',nc:'Volgende wijziging',nh:'Volgend thuisverlof',in:'over',dg:'dagen',nu:'nu bezig',ev:'Jaaroverzicht',mo:'Maandweergave',dy:['Ma','Di','Wo','Do','Vr','Za','Zo'],mn:['Januari','Februari','Maart','April','Mei','Juni','Juli','Augustus','September','Oktober','November','December'],ft:'Gemaakt op basis van de gedrukte kalender. Controleer belangrijke data altijd op het papier.',fr:'van',to:'t/m',tm:'morgen',lf:'Buiten de kalender'},
+tr:{ti:'İzin Çizelgesi 2026–2027',su:'Yatılı · Zuid Nederland',td:'Bugün',nc:'Sonraki değişiklik',nh:'Sonraki ev izni',in:'',dg:'gün sonra',nu:'şu an',ev:'Yıllık görünüm',mo:'Aylık görünüm',dy:['Pzt','Sal','Çar','Per','Cum','Cmt','Paz'],mn:['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'],ft:'Basılı takvime göre hazırlanmıştır. Önemli tarihleri kağıttan da kontrol edin.',fr:'',to:'–',tm:'yarın',lf:'Takvim dışı'}};
+const map={},key=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const r=(c,s,n=1)=>{const d=new Date(s+'T12:00:00');for(let i=0;i<n;i++){map[key(d)]=c;d.setDate(d.getDate()+1)}};
+[['H','2026-08-01',2],['Y','2026-08-03',5],['H','2026-08-08',9],['Y','2026-08-17',6],['S','2026-08-23'],['M','2026-08-24'],
+['T','2026-09-05'],['H','2026-09-06'],['T','2026-09-12'],['H','2026-09-13'],['T','2026-09-19'],['H','2026-09-20'],
+['T','2026-10-03'],['H','2026-10-04'],['T','2026-10-10'],['H','2026-10-11'],['T','2026-10-16',4],['A','2026-10-20',3],['T','2026-10-31'],
+['H','2026-11-01'],['T','2026-11-07'],['H','2026-11-08'],['T','2026-11-14'],['H','2026-11-15',2],['H','2026-11-21',3],['T','2026-11-28'],['H','2026-11-29',2],
+['T','2026-12-05'],['H','2026-12-06'],['M','2026-12-10'],['T','2026-12-12'],['H','2026-12-13'],['T','2026-12-19'],['H','2026-12-20'],['T','2026-12-21',12],
+['H','2027-01-02',2],['M','2027-01-04'],['T','2027-01-09'],['H','2027-01-10'],['T','2027-01-16'],['H','2027-01-17'],['H','2027-01-22',3],['H','2027-01-29',3],
+['T','2027-02-06'],['H','2027-02-07'],['M','2027-02-08'],['T','2027-02-13',5],['H','2027-02-18',4],['H','2027-02-27',2],
+['M','2027-03-05'],['T','2027-03-06'],['H','2027-03-07'],['M','2027-03-09'],['T','2027-03-13'],['H','2027-03-14'],['T','2027-03-20'],['H','2027-03-21'],['H','2027-03-27',3],
+['H','2027-04-02'],['T','2027-04-03'],['H','2027-04-04'],['T','2027-04-10'],['H','2027-04-11'],['T','2027-04-17'],['H','2027-04-18'],['T','2027-04-23',9],['H','2027-05-02'],
+['A','2027-05-03',2],['H','2027-05-08',2],['H','2027-05-15'],['M','2027-05-16'],['H','2027-05-17'],['T','2027-05-22'],['H','2027-05-23'],['H','2027-05-28',3],
+['T','2027-06-05'],['H','2027-06-06'],['T','2027-06-12'],['H','2027-06-13'],['T','2027-06-19'],['H','2027-06-20'],
+['T','2027-07-03'],['H','2027-07-04'],['T','2027-07-10'],['H','2027-07-11'],['S','2027-07-16'],['H','2027-07-17',2],['Y','2027-07-19',13]].forEach(a=>r(...a));
+const $=id=>document.getElementById(id),A=new Date(2026,7,1),Z=new Date(2027,6,31,23);
+const code=d=>(d<A||d>Z)?'N':(map[key(d)]||'N'),add=(d,n)=>{const e=new Date(d);e.setDate(e.getDate()+n);return e};
+let L=localStorage.getItem('l')||'nl',idx=0,sel=null,off=new Set(),dir='',year=false;
+try{L=localStorage.getItem('l')||'nl'}catch(e){}
+const now=new Date(),today=new Date(now.getFullYear(),now.getMonth(),now.getDate(),12);
+const mi=(today.getFullYear()-2026)*12+today.getMonth()-7;idx=Math.min(11,Math.max(0,mi));
+const name=c=>C[c][L==='nl'?1:2],fmt=(d,o)=>d.toLocaleDateString(L==='nl'?'nl-NL':'tr-TR',o);
+function runOf(d){const c=code(d);let a=d,b=d;while(add(a,-1)>=A&&code(add(a,-1))==c)a=add(a,-1);while(add(b,1)<=Z&&code(add(b,1))==c)b=add(b,1);return[a,b]}
+function grid(i,mini){const y=2026+Math.floor((i+7)/12),m=(i+7)%12,f=new Date(y,m,1,12),off0=(f.getDay()+6)%7,n=new Date(y,m+1,0).getDate();
+let h=mini?'':X[L].dy.map(x=>`<div class="dh">${x}</div>`).join('');for(let k=0;k<off0;k++)h+='<div></div>';
+for(let d=1;d<=n;d++){const dt=new Date(y,m,d,12),c=code(dt),k=key(dt);
+h+=`<button class="d ${c=='N'?'n':'c'} ${c} ${off.size&&!off.has(c)?'dim':''} ${k==key(today)?'t':''} ${sel&&k==key(sel)?'sel':''}" style="--c:${C[c][0]};--i:${d}" data-d="${k}">${mini?'':d}</button>`}return h}
+function det(d){sel=d;const c=code(d),[a,b]=runOf(d),days=Math.round((b-a)/864e5)+1;
+$('det').innerHTML=`<div class="dot" style="--c:${C[c][0]}"></div><div><p>${fmt(d,{weekday:'long',day:'numeric',month:'long',year:'numeric'})}</p><b>${name(c)}</b><p>${X[L].fr} ${fmt(a,{day:'numeric',month:'short'})} ${X[L].to} ${fmt(b,{day:'numeric',month:'short'})} · ${days} ${L=='nl'?'dagen':'gün'}</p></div>`;
+document.querySelectorAll('#mv .d').forEach(e=>e.classList.toggle('sel',e.dataset.d==key(d)))}
+function hero(){const c=code(today),t=X[L],h=$('hero');h.style.setProperty('--hc',c=='N'?'#2b6cb0':C[c][0]);
+let nx=add(today,1);while(nx<=Z&&code(nx)==c)nx=add(nx,1);const dn=Math.round((nx-today)/864e5);
+let hl=new Date(today);while(hl<=Z&&code(hl)!='H')hl=add(hl,1);const dh=Math.round((hl-today)/864e5);
+const s=n=>n<=0?t.nu:n==1?t.tm:(L=='nl'?`${t.in} ${n} ${t.dg}`:`${n} ${t.dg}`);
+h.innerHTML=`<p>${t.td} · ${fmt(today,{weekday:'long',day:'numeric',month:'long'})}</p><h2>${name(c)}</h2><div class="row"><div class="mini">${t.nc}<b>${nx<=Z?s(dn):'–'}</b>${nx<=Z?name(code(nx)):''}</div><div class="mini">${t.nh}<b>${hl<=Z?s(dh):'–'}</b>${hl<=Z?fmt(hl,{day:'numeric',month:'long'}):''}</div></div>`}
+function draw(){const t=X[L];document.documentElement.lang=L;$('ti').innerHTML=`${t.ti}<small>${t.su}</small>`;$('lg').textContent=L=='nl'?'TR':'NL';$('ft').textContent=t.ft;$('vw').textContent=year?t.mo:t.ev;
+$('chips').innerHTML=Object.keys(C).map(c=>`<button class="chip ${off.size&&!off.has(c)?'off':''}" data-c="${c}" style="--c:${c=='N'?'transparent':C[c][0]}"><i style="${c=='N'?'border:1px solid var(--mu)':''}"></i>${name(c)}</button>`).join('');
+const y=2026+Math.floor((idx+7)/12),m=(idx+7)%12;$('mt').textContent=`${t.mn[m]} ${y}`;
+$('mv').innerHTML=`<div class="g ${dir}">${grid(idx)}</div>`;
+$('yv').innerHTML=Array.from({length:12},(_,i)=>`<div class="ym" data-m="${i}"><b>${t.mn[(i+7)%12]} ${2026+Math.floor((i+7)/12)}</b><div class="g">${grid(i,1)}</div></div>`).join('');
+$('mv').classList.toggle('hide',year);$('yv').classList.toggle('hide',!year);$('pv').style.visibility=$('nx').style.visibility=year?'hidden':'visible';
+hero();det(sel&&sel>=new Date(y,m,1)&&sel<=new Date(y,m+1,0,23)?sel:(today>=new Date(y,m,1)&&today<=new Date(y,m+1,0,23)?today:new Date(y,m,1,12)))}
+const go=n=>{if(idx+n<0||idx+n>11)return;dir=n>0?'s-l':'s-r';idx+=n;draw()};
+$('pv').onclick=()=>go(-1);$('nx').onclick=()=>go(1);
+$('lg').onclick=()=>{L=L=='nl'?'tr':'nl';try{localStorage.setItem('l',L)}catch(e){}dir='';draw()};
+$('th').onclick=()=>{const r=document.documentElement,d=getComputedStyle(r).getPropertyValue('--bg').trim()=='#0d1722';r.dataset.theme=d?'light':'dark'};
+$('vw').onclick=()=>{year=!year;draw()};
+$('chips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;const c=b.dataset.c;off.has(c)?off.delete(c):off.add(c);dir='';draw()};
+$('mv').onclick=e=>{const b=e.target.closest('.d');if(b)det(new Date(b.dataset.d+'T12:00:00'))};
+$('yv').onclick=e=>{const b=e.target.closest('.ym');if(b){idx=+b.dataset.m;year=false;dir='s-l';draw();$('cal').scrollIntoView({behavior:'smooth'})}};
+let sx=0;$('mv').addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+$('mv').addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)go(d<0?1:-1)});
+document.addEventListener('keydown',e=>{if(e.key=='ArrowLeft')go(-1);if(e.key=='ArrowRight')go(1)});
+draw();
+</script></body></html>
